@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<META     HTTP-EQUIV="Pragma"     CONTENT="no-cache">   
+<META     HTTP-EQUIV="Cache-Control"     CONTENT="no-cache">   
+<META     HTTP-EQUIV="Expires"     CONTENT="0">  
+<link rel="icon" href="/dir/favicon.ico" mce_href="/dir/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/dir/favicon.ico" mce_href="/dir/favicon.ico" type="image/x-icon"> 
+<link type="text/css" rel="stylesheet" href="style.css"> 
+<title id="tit">碰1碰</title>
+<script type="text/javascript" src="request.js"></script>
+</head>
+<body id="mainwin" onload="numOnline();" onunload="if(fetch==true){disConn();sleep(100);}" onbeforeunload="checkLeave();">
+<div id="header">
+<div id="logoimage"></div>
+<div id="logoright"></div>
+</div>
+<div id="unvisable" style="display:none;"></div>
+<div id="Login">
+	<div id="loginwrapper">
+        <form id="info" name="info">
+         <table border="0" align="center">
+                 <tbody>
+                  <tr>
+                    <td><div id="input_f_wrapper"><input type="button" name="f" id="input_f" onclick="Start(this.name);" /></div></td>
+                    <td><div id="input_m_wrapper"><input type="button" name="m" id="input_m" onclick="Start(this.name);" /></div></td>
+                  </tr>
+                 </tbody>
+                </table>
+         </form>
+		  <div id="showus" onclick="Direct();"><img src="images/index-down.png"/></div>
+		  <script type="text/javascript">var i=new Image();i.src="images/index-right.png";</script>
+		  <div id="us" style="display:none;">欢迎使用碰1碰和有缘的陌生人聊天,碰出火花碰出激情！</div>
+	</div>
+    <div class="bottom">
+       <p align="center">&copy; 2009 Designed BY <a href="mailto:huilong.vincent@gmail.com">HE Huilong</a> AND <a href="mailto:asxzy@163.com">Zhang Yi</a></p>
+    </div>
+</div>
+<div id="layer" name="layer" style="display:none;">
+  <div id="chatbox">
+	  <div id="msg" class="logwrapper">
+	     <div id="showmsg"></div>
+	     <div id="typing" class="logitem" style="display:none;"><div class="syslog">对方正在输入。。。</div></div>
+	  </div>
+      <div class="bottom">
+        <table class="controltable" cellpadding="0" cellspacing="0" border="0"><tbody>
+          <tr>
+            <td class="disconnectbtncell"><div class="disconnectbtnwrapper"><input class="disconnectbtn" id="discon" type="button" name="discon" value="断开" onClick="var conf=window.confirm('确定要退出吗？'); if(conf){disConn();}" disabled="true"></div></td>
+            <td class="chatmsgcell"><div class="chatmsgwrapper"><textarea class="chatmsg" id="message" name="message" cols="150" rows="7" disabled="true" onkeyup="testType();"></textarea></div></td>
+            <td class="sendbthcell"><div class="sendbtnwrapper"><input class="sendbtn" type="button" id="sendmsg" name="sendmsg" value="发送" onClick="Send();" disabled="true"/></div></td>
+          </tr>
+        </tbody></table>
+      </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #ffdd22;
+	height: 100%;
+	font-family: 微软雅黑, 宋体, sans-serif;
+	font-size: 1em;
+	width: 100%;
+}
+
+#header {
+    padding: 5px;
+    background: #c8e2ea;
+	height: 80px;
+    border-bottom: 1px solid #CCC;
+}
+
+#logoimage {
+	margin-left: 20px;
+	background: url(images/logo.png);
+	height: 75px;
+	width: 75px;
+	float: left;
+}
+
+#logoright {
+    margin: 25px;
+	float: right;
+}
+
+#login {
+	background: #CCC;
+	padding: 15px;
+}
+
+#loginwrapper {
+	position: absolute;
+	top: 100px;
+	left: 25px;
+	right: 25px;
+	bottom: 110px;
+	padding: 80px;
+    CLEAR: both;
+	background-color: #FFF;
+	width: auto;
+	height: auto;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	border: 1px solid #CCC;
+}
+
+#input_m_wrapper {
+	height: 50px;
+	width: 200px;
+}
+#input_m{
+	height: 50px;
+	width: 200px;
+	background: url(images/button-m.png);
+	margin-left: 5px;
+	border: none;
+}
+
+#input_f_wrapper {
+	height: 50px;
+	width: 200px;
+}
+
+#input_f{
+	height: 50px;
+	width: 200px;
+	background: url(images/button-f.png);
+	margin-right: 5px;
+	border: none;
+}
+
+.logwrapper {
+	position: absolute;
+	top: 100px;
+	left: 25px;
+	right: 25px;
+	bottom: 110px;
+	padding: 15px;
+    CLEAR: both;
+	background-color: #FFF;
+	width: auto;
+	height: auto;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	border: 1px solid #CCC;
+	overflow-y: auto;
+	overflow-x:hidden;
+	word-break:break-all;
+}
+
+.logitem {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	font-family: 微软雅黑, 宋体, sans-serif;
+	font-size: 1em;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.syslog {
+	color: #555;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.strangermsg .msgsource {
+    color: red;
+    font-weight: bold;
+}
+
+.youmsg .msgsource {
+    color: blue;
+    font-weight: bold;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 15px;
+    left: 25px;
+    right: 25px;
+    height: 85px;
+}
+
+.disconnectbtnwrapper {
+    margin-right: 10px;
+    border: 1px solid #CCC;
+    border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+	width:100px;
+}
+
+.disconnectbtn {
+	font-family: 微软雅黑, 宋体, sans-serif;
+    font-size: 1em;
+    background: white;
+    width: 100px;
+    height: 85px;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+    border-radius-bottomleft: 10px;
+    -moz-border-radius-bottomleft: 10px;
+    -webkit-border-bottom-left-radius: 10px;
+}
+
+.sendbtnwrapper {
+    margin-left: 10px;
+    border: 1px solid #CCC;
+    border-radius-bottomright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+}
+
+.sendbtn {
+	font-family: 微软雅黑, 宋体, sans-serif;
+    font-size: 1em;
+    background: white;
+    width: 100px;
+    height: 85px;
+    padding: 0;
+    margin: 0;
+    border: 0 none;
+    border-radius-bottomright: 10px;
+    -moz-border-radius-bottomright: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+}
+
+.chatmsg {
+    width: 100%;    
+    background: white;
+	font-family: 微软雅黑, 宋体, sans-serif;
+    font-size: 1em;
+    border: 1px solid #CCC;
+    padding: 0;
+    margin: 0;
+    height: 85px;
+    overflow: auto;
+}
+
+.controltable {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+
+.chatmsgwrapper {
+	float: left;
+	clear: none;
+	width: 100%;
+    display:inline;
+}
+
+.chatmsgcell {
+	width: 100%;
+}
